@@ -18,13 +18,19 @@
 	<meta name="twitter:description" content="Trabajemos juntos ;)" />
 	<meta name="twitter:image" content="imagen 200x200" />
 
-	<link rel="shortcut icon" href="imgs/favicon.ico">
+	<!-- <link rel="shortcut icon" href="imgs/favicon.ico"> -->
 	<link rel="apple-touch-icon" href="imgs/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="imgs/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="imgs/apple-touch-icon-114x114.png">
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 <body>
 	<div>
@@ -41,12 +47,19 @@
 			</nav>
 		</header>
 		<section>
-			<div>
-				<article>
-					<h1>;) hola ;) ami ;) como ;) estas ;) espero ;) que ;) no ;) estes ;) down ;)</h1>
-				</article>
-			</div>
+			<div class="demo-1">
+				<div class="content">
+					<div id="large-header" class="large-header">
+						<canvas id="demo-canvas"></canvas>
+						<h1 class="main-title">;) hola ;) ami ;) como ;) estas ;) espero ;) que ;) no ;) estes ;) <span class="thin">down ;)</span></h1>
+					</div>
+				</div>		
+			</div><!-- /container -->
 		</section>
 	</div>
+	<script src="js/TweenLite.min.js"></script>
+	<script src="js/EasePack.min.js"></script>
+	<script src="js/rAF.js"></script>
+	<script src="js/demo-1.js"></script>
 </body>
 </html>
