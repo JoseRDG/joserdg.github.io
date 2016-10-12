@@ -1,7 +1,6 @@
 /****** GENERAL ******/
 body {
 	background-color: #FCEF40;
-	margin: 0;
 	color: #cecece;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -41,6 +40,58 @@ body {
 	font-weight: 200;
 }
 
+.svg-filters {
+  position: absolute;
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+}
+
+.button--8 {
+  -webkit-font-smoothing: antialiased;
+  background-color: #222;
+  border: none;
+  display: inline-block;
+  font-size: 0.85em;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  letter-spacing: 0.1em;
+  color: white;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  -webkit-transition: background-color 0.1s ease-out;
+  -moz-transition: background-color 0.1s ease-out;
+  transition: background-color 0.1s ease-out;
+}
+ 
+.button--8:focus {
+    outline: none;
+    color: #fff;
+}
+
+.safari .button, .safari
+.button__bg {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+
+.button--8 {
+    position: relative;
+    z-index: 1;
+    outline: 10px solid #FCEF40 !important;
+    background: #FCEF40;
+    border: 2px solid #FF2B5E;
+    color: #FF2B5E;
+}
+
+.button--8:focus {
+    color: #222;
+}
+
+.button--8:hover {
+    background: #FCEF40;
+}
 /****** ANIMACION HEADER ******/
 
 /****** MEDIA QUERIES ******/
