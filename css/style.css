@@ -29,8 +29,7 @@ body {
 	transform: translate3d(-50%,-50%,0);
 }
 
-.demo-1 .main-title, 
-.demo-3 .main-title {
+.demo-1 .main-title {
 	text-transform: uppercase;
 	font-size: 4.2em;
 	letter-spacing: 0.1em;

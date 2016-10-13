@@ -61,10 +61,10 @@
 }
 
 .card__caption {
-	font-size: 2em;
-	max-width: 900px;
-	margin: 0 auto;
-	padding: 35px 30px 0px;
+    font-size: 1.5em;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px 30px 0px;
 }
 
 .card__container--closed .card__caption {
@@ -77,21 +77,37 @@
 }
 
 .card__title {
-	font-size: 1.5em;
-	line-height: 1;
-	margin: 5px 0 0 0;
-	color: #3b393d;
+    font-size: 1.3em;
+    line-height: 1;
+    margin: 5px 0 0 0;
+    color: #3b393d;
 }
 
 .card__container--closed .card__title {
 	color: #fff;
+	margin: 5px 0 15px 0;
 }
 
 .card__subtitle {
 	font-size: .95em;
-	line-height: 1;
-	margin: 5px 0 0;
-	color: #777778;
+    line-height: 1;
+    margin: 5px 0 0;
+    color: #777778;
+}
+
+.card__container--closed .card__links {
+	display: none;
+}
+
+.card__links {
+	font-size: .80em;
+    line-height: 1;
+    margin: 15px 0 0;
+    color: #FF2D5F;
+}
+
+.card__links a {
+	color: #FF2D5F;
 }
 
 .card__container--closed .card__subtitle {
@@ -99,16 +115,16 @@
 }
 
 .card__copy {
-	font-size: 1.25em;
-	max-width: 900px;
-	margin: 0 auto;
-	padding: 25px 30px 100px;
-	color: #3b393d;
+    font-size: 1.2em;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 25px 30px 100px;
+    color: #3b393d;
 }
 
 .card__copy p:first-of-type {
-	font-size: 1.5em;
-	padding: 0 0 1em 0;
+    font-size: 1em;
+    padding: 0;
 }
 
 .card__btn-close {
@@ -128,8 +144,7 @@
 	font-size: .85em;
 	display: -webkit-flex;
 	display: flex;
-	padding: 0 0 35px 0;
-
+	padding: 0 0 15px 0;
 	-webkit-align-items: center;
 	align-items: center;
 }
@@ -149,6 +164,13 @@
 
 .meta__date {
 	margin: 0 0 0 auto;
+}
+
+.card__container--closed .card__title span,
+.card__container--closed .card__subtitle span {
+    background-color: #FCEF40;
+    padding: 5px;
+    color: #FF2D5F;
 }
 
 @media only screen and (max-width: 980px) {
