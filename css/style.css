@@ -1,4 +1,4 @@
-/****** GENERAL ******/
+/***** GENERAL ******/
 body {
 	background-color: #FCEF40;
 	color: #cecece;
@@ -65,8 +65,8 @@ body {
 }
  
 .button--8:focus {
-    outline: none;
-    color: #fff;
+  outline: none;
+  color: #fff;
 }
 
 .safari .button, .safari
@@ -76,22 +76,252 @@ body {
 }
 
 .button--8 {
-    position: relative;
-    z-index: 1;
-    outline: 10px solid #FCEF40 !important;
-    background: #FCEF40;
-    border: 2px solid #FF2B5E;
-    color: #FF2B5E;
+  position: relative;
+  z-index: 1;
+  outline: 10px solid #FCEF40 !important;
+  background: #FCEF40;
+  border: 2px solid #FF2B5E;
+  color: #FF2B5E;
 }
 
 .button--8:focus {
-    color: #222;
+  color: #222;
 }
 
 .button--8:hover {
-    background: #FCEF40;
+  background: #FCEF40;
 }
 /****** ANIMACION HEADER ******/
+
+/****** MENU ******/
+.showLeftPush {
+  position: fixed;
+  z-index: 9999;
+  background: transparent;
+  color: #000000;
+  display: block;
+  padding: 0px;
+  height: 50px;
+  width: 50px;
+  top: 50px;
+  right: 95px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+  border-radius: 30px;
+  box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.1);
+  line-height: 42px;
+  border: 4px solid;
+}
+
+.showLeftPush.active{
+  background: #FFF !important;
+  color: #FF2D5F !important;
+}
+
+.showLeftPush02 {
+  background: transparent;
+  color: #FF2D5F !important;
+  margin: auto;
+  height: 50px;
+  width: 50px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+  border-radius: 30px;
+  box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.1);
+  line-height: 42px;
+  border: 4px solid;
+}
+
+.MenuJoseRDG {
+  margin: 150px 0 0;
+}
+
+#showLeft:before {
+  content: "\f0c9";
+}
+
+#showLeft.active:before {
+  content: "\f00d";
+}
+
+.TitlesMokana {
+  text-indent: -9999px;
+  width: 100%;
+  height: 215px;
+  display: block;
+  margin: 40vh auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+/* General styles for all menus */
+.cbp-spmenu {
+  background: #ffffff;
+  position: fixed;
+}
+
+.cbp-spmenu h3 {
+  color: #afdefa;
+  font-size: 1.9em;
+  padding: 20px;
+  margin: 0;
+  font-weight: 300;
+  background: #0d77b6;
+}
+
+.cbp-spmenu a {
+  display: block;
+  color: #FF2D5F;
+  font-size: 1.1em;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 45, 95, 0.4);
+}
+
+.cbp-spmenu .MenuJoseRDG a:hover {
+  text-decoration: none;
+  background: #FF2D5F;
+  color: #FFF;
+}
+
+.cbp-spmenu > a:hover {
+  background: transparent !important;
+}
+
+.cbp-spmenu a:active {
+  background: #afdefa;
+  color: #47a3da;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+.cbp-spmenu-vertical {
+  width: 240px;
+  height: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.cbp-spmenu-vertical a {
+  padding: 1em;
+}
+
+.cbp-spmenu-horizontal {
+  width: 100%;
+  height: 150px;
+  left: 0;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.cbp-spmenu-horizontal h3 {
+  height: 100%;
+  width: 20%;
+  float: left;
+}
+
+.cbp-spmenu-horizontal a {
+  float: left;
+  width: 20%;
+  padding: 0.8em;
+  border-left: 1px solid #258ecd;
+}
+
+/* Vertical menu that slides from the left or right */
+.cbp-spmenu-left {
+  left: -240px;
+}
+
+.cbp-spmenu-right {
+  right: -240px;
+}
+
+.cbp-spmenu-left.cbp-spmenu-open {
+  left: 0px;
+}
+
+.cbp-spmenu-right.cbp-spmenu-open {
+  right: 0px;
+}
+
+/* Horizontal menu that slides from the top or bottom */
+.cbp-spmenu-top {
+  top: -150px;
+}
+
+.cbp-spmenu-bottom {
+  bottom: -150px;
+}
+
+.cbp-spmenu-top.cbp-spmenu-open {
+  top: 0px;
+}
+
+.cbp-spmenu-bottom.cbp-spmenu-open {
+  bottom: 0px;
+}
+
+/* Push classes applied to the body */
+.cbp-spmenu-push {
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+}
+
+.cbp-spmenu-push-toright {
+  left: 240px;
+}
+
+.cbp-spmenu-push-toleft {
+  left: -240px;
+}
+
+/* Transitions */
+.cbp-spmenu,
+.cbp-spmenu-push {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/****** MENU ******/
+
+/****** REDES ******/
+#redes-menu {
+  margin: 0 auto;
+  width: 165px;
+}
+
+.redes {
+  width: 72px;
+  /*height: 45px;*/
+  float: left;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.redes:hover {
+  border-radius: 28px;
+  text-decoration: none;
+  background: #FF2D5F;
+  color: #FFF;
+}
+
+.text-hidden {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+/****** REDES ******/
 
 /****** MEDIA QUERIES ******/
 @media only screen and (max-width : 768px) {
@@ -99,4 +329,39 @@ body {
 		font-size: 3em;
 	}
 }
-/****** MEDIA QUERIES ******/
+
+@media screen and (max-width: 55.1875em){
+  .cbp-spmenu-horizontal {
+    font-size: 75%;
+    height: 110px;
+  }
+
+  .cbp-spmenu-top {
+    top: -110px;
+  }
+
+  .cbp-spmenu-bottom {
+    bottom: -110px;
+  }
+}
+
+@media screen and (max-height: 26.375em){
+  .cbp-spmenu-vertical {
+    font-size: 90%;
+    width: 190px;
+  }
+
+  .cbp-spmenu-left,
+  .cbp-spmenu-push-toleft {
+    left: -190px;
+  }
+
+  .cbp-spmenu-right {
+    right: -190px;
+  }
+
+  .cbp-spmenu-push-toright {
+    left: 190px;
+  }
+}
+/****** MEDIA QUERIES *****
