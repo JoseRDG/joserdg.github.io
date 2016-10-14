@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>JoseRDG</title>
+	<link rel="alternate" hreflang="es" href="https://joserdg.github.io/contacto.html">
 	<meta name="description" content="JoseRDG" />
 	<meta name="keywords" content="Jose Rada, JoseRDG, Diseño gráfico, diseñador, design, designer graphic, ui/ux responsive design, app"/>
 	<meta name="author" content="JoseRDG" />
@@ -59,7 +60,7 @@
 				<hgroup>
 					<h1 class="text-center">Vamo a contactarnos</h1>
 				</hgroup>
-				<form class="text-center">
+				<form class="text-center" id="template-contactform" name="template-contactform" action="mailer/sendemail.php" method="post">
   					<div class="form-group">
   						<span class="input input--nao">
 							<input class="input__field input__field--nao" type="text" id="nombre" required/>
@@ -73,7 +74,7 @@
  					</div>
  					<div class="form-group">
   						<span class="input input--nao">
-							<input class="input__field input__field--nao" type="text" id="correo" required/>
+							<input class="input__field input__field--nao" type="email" id="correo" required/>
 							<label class="input__label input__label--nao" for="correo">
 								<span class="input__label-content input__label-content--nao">Email:</span>
 							</label>
@@ -110,7 +111,7 @@
 					</svg>
 
 					<button type="submit" id="component-8" class="button button--8" style="filter: url('#filter-ripple-1')">Enviar</button> -->
-					<!-- <button type="submit">Enviar</button> -->
+					<button type="submit" id="template-contactform-submit" name="template-contactform-submit">Enviar</button>
  				</form>
 			</div>
 		</div><!-- /page-contacto -->
