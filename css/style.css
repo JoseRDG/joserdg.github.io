@@ -98,7 +98,7 @@ body {
   position: fixed;
   z-index: 9999;
   background: transparent;
-  color: #000000;
+  color: #FF2D5F;
   display: block;
   padding: 0px;
   height: 50px;
@@ -185,7 +185,8 @@ body {
   border-bottom: 1px solid rgba(255, 45, 95, 0.4);
 }
 
-.cbp-spmenu .MenuJoseRDG a:hover {
+.cbp-spmenu .MenuJoseRDG a:hover,
+.MenuJoseRDG .menuactive {
   text-decoration: none;
   background: #FF2D5F;
   color: #FFF;
@@ -303,6 +304,9 @@ body {
   float: left;
   margin: 0 5px;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .redes:hover {
@@ -310,6 +314,9 @@ body {
   text-decoration: none;
   background: #FF2D5F;
   color: #FFF;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .text-hidden {

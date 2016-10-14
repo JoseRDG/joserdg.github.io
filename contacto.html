@@ -33,8 +33,24 @@
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
-<body>
+<body class="cbp-spmenu-push">
+	<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s1">
+		<div class="MenuJoseRDG">			
+			<a href="/">Home</a>
+			<a href="portafolio.html">Portafolio</a>
+			<a class="menuactive" href="contacto.html">Contacto</a>
+		</div>
+		<div id="redes-menu">
+  			<a href="https://www.behance.net/joserdg" class="redes" target="_blank"><i class="fa fa-behance"></i><span class="text-hidden">Behance</span></a>
+  			<a href="https://www.instagram.com/joseradadg" class="redes" target="_blank"><i class="fa fa-instagram"></i><span class="text-hidden">Instagram</span></a>
+  			<a href="https://issuu.com/joserdg" class="redes" target="_blank"><i class="fa fa-book"></i><span class="text-hidden">Issuu</span></a>
+  			<a href="https://www.linkedin.com/in/jose-eduardo-rada-del-gallego-11769490" class="redes" target="_blank"><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
+		</div>
+	</nav>
+	<a id="showLeft" class="fa fa-bars showLeftPush"></a>
+
 	<!-- pages stack -->
 	<div class="pages-stack">
 		
@@ -89,6 +105,7 @@
 							</filter>
 						</defs>
 					</svg>
+					<div class="g-recaptcha" data-sitekey="6LdPPAkUAAAAAEXZaRgSpw3Sr3bfKe1qHjpDp9Wa"></div>
 					<button type="submit" id="component-8" class="button button--8" style="filter: url('#filter-ripple-1')">Enviar</button>
  				</form>
 			</div>
@@ -144,6 +161,16 @@
 					}
 				}
 			})();
+	</script>
+	<script>
+		var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+			showLeft = document.getElementById( 'showLeft' ),			
+			body = document.body;
+	
+		showLeft.onclick = function() {
+			classie.toggle( this, 'active' );
+			classie.toggle( menuLeft, 'cbp-spmenu-open' );
+			};
 	</script>
 
 	<script src="js/mainbtns.js"></script>
