@@ -327,9 +327,24 @@ body {
   height: 0;
   color: transparent;
 }
-
 /****** REDES ******/
 
+.g-recaptcha .rc-anchor-light {
+  background: #FCEF40 !important;
+  border: 1px solid #FF2B5E !important;
+}
+
+.g-recaptcha .rc-anchor-logo-text {
+  color: #000000 !important;
+}
+
+.g-recaptcha .rc-anchor-pt a:link, .rc-anchor-pt a:visited {
+  color: #000000 !important;
+}
+
+.g-recaptcha > div {
+  margin: 0 auto;
+}
 /****** MEDIA QUERIES ******/
 @media only screen and (max-width : 768px) {
 	.demo-1 .main-title {
