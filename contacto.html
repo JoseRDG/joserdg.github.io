@@ -34,7 +34,6 @@
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body class="cbp-spmenu-push">
 	<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s1">
@@ -60,7 +59,7 @@
 				<hgroup>
 					<h1 class="text-center">Vamo a contactarnos</h1>
 				</hgroup>
-				<form class="text-center" id="template-contactform" name="template-contactform" action="mailer/sendemail.php" method="post">
+				<form class="text-center" id="template-contactform" name="template-contactform" action="mailer/sendemailcindes.php" method="post">
   					<div class="form-group">
   						<span class="input input--nao">
 							<input class="input__field input__field--nao" type="text" id="nombre" required/>
@@ -74,7 +73,7 @@
  					</div>
  					<div class="form-group">
   						<span class="input input--nao">
-							<input class="input__field input__field--nao" type="email" id="correo" required/>
+							<input class="input__field input__field--nao" type="text" id="correo" required/>
 							<label class="input__label input__label--nao" for="correo">
 								<span class="input__label-content input__label-content--nao">Email:</span>
 							</label>
@@ -95,11 +94,8 @@
 							</svg>
 						</span>
  					</div>
- 					<div class="text-center">
- 						<div class="g-recaptcha" data-sitekey="6LdPPAkUAAAAAEXZaRgSpw3Sr3bfKe1qHjpDp9Wa"></div>
- 					</div>
 
- 					<!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+ 					<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
 						<defs>
 							<filter id="filter-ripple-1">
 								<feImage xlink:href="img/ripple.png" x="30" y="20" width="0" height="0" result="ripple"></feImage>
@@ -110,8 +106,7 @@
 						</defs>
 					</svg>
 
-					<button type="submit" id="component-8" class="button button--8" style="filter: url('#filter-ripple-1')">Enviar</button> -->
-					<button type="submit" id="template-contactform-submit" name="template-contactform-submit">Enviar</button>
+					<button type="submit" id="component-8" class="button button--8" style="filter: url('#filter-ripple-1')">Enviar</button>
  				</form>
 			</div>
 		</div><!-- /page-contacto -->
