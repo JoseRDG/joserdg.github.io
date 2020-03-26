@@ -24,6 +24,7 @@ var quotes = ['NOOOOOOOOOOOOO',
 	'eche que no',
 	'nojodaaaaaaaa que no',
 	'hey no puedes salir en esa mondá',
+	'SIIIIIIIIgue creyendo bobo hp',
 
 ]
 
