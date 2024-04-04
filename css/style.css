@@ -1,9 +1,33 @@
 /***** GENERAL ******/
 body {
-	background-color: #FCEF40;
+	background-color: #ffffff;
 	color: #cecece;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+.JoseRDG_btn_VS {
+  margin-top: 8px;
+}
+
+.JoseRDG_btn {
+  z-index: 1;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 1.6rem;
+  display: ruby-text;
+  text-align: center;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+.JoseRDG_btn:focus {
+  color: #ffffff;
+}
+
+.JoseRDG_btn:hover {
+  background-color: #868686;
 }
 /****** GENERAL ******/
 
@@ -21,7 +45,7 @@ body {
 	position: absolute;
 	margin: 0;
 	padding: 0;
-	color: #FF2D5F;
+	color: #000000;
 	text-align: center;
 	top: 43%;
 	left: 50%;
@@ -33,7 +57,7 @@ body {
   position: absolute;
   margin: 0;
   padding: 0;
-  color: #FF2D5F;
+  color: #000000;
   text-align: center;
   top: 50%;
   left: 50%;
@@ -110,7 +134,7 @@ body {
   position: fixed;
   z-index: 9999;
   background: transparent;
-  color: #FF2D5F;
+  color: #000000;
   display: block;
   padding: 0px;
   height: 50px;
@@ -129,12 +153,12 @@ body {
 
 .showLeftPush.active{
   background: #FFF !important;
-  color: #FF2D5F !important;
+  color: #000000 !important;
 }
 
 .showLeftPush02 {
   background: transparent;
-  color: #FF2D5F !important;
+  color: #000000 !important;
   margin: auto;
   height: 50px;
   width: 50px;
@@ -188,19 +212,40 @@ body {
 
 .cbp-spmenu a {
   display: block;
-  color: #FF2D5F;
+  color: #000000;
   font-size: 1.1em;
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
   text-align: center;
   text-transform: uppercase;
-  border-bottom: 1px solid rgba(255, 45, 95, 0.4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.MenuJoseRDG_sub {
+  padding: 1em 1em 0;
+  margin-bottom: 0;
+  display: block;
+  color: #000000;
+  font-size: 1.1em;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.submenuJoseRDG {
+  padding: 0.5em 1em 0 !important;
+  text-transform: initial !important;
+}
+
+.joserdgNOBB {
+  border-bottom: initial !important;
 }
 
 .cbp-spmenu .MenuJoseRDG a:hover,
 .MenuJoseRDG .menuactive {
   text-decoration: none;
-  background: #FF2D5F;
+  background: #000000;
   color: #FFF;
 }
 
@@ -311,10 +356,9 @@ body {
 }
 
 .redes {
-  width: 72px;
+  width: 70px;
   /*height: 45px;*/
-  float: left;
-  margin: 0 5px;
+  margin: auto;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -324,7 +368,7 @@ body {
 .redes:hover {
   border-radius: 28px;
   text-decoration: none;
-  background: #FF2D5F;
+  background: #000000;
   color: #FFF;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -341,16 +385,30 @@ body {
 }
 
 .MailJoseRDG {
-  color: #FF2D5F;
+  color: #000000;
   font-size: 1.1em;
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  text-transform: uppercase;
   clear: both;
   padding-top: 20px;
 }
 
+.MailJoseRDG a {
+  color: #000000;
+  font-size: 1.1em;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  clear: both;
+  padding: initial;
+  text-transform: initial;
+  border-bottom: initial;
+}
+
+.MailP {
+  margin-bottom: 0;
+}
 /****** REDES ******/
 
 .g-recaptcha .rc-anchor-light {
