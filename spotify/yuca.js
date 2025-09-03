@@ -88,6 +88,7 @@ const canciones = [
   { nombres: ["Rosalba", "Rosalbita"], artista: "Jorge Oñate", cancion: "Rosalbita", link: "https://open.spotify.com/track/2u5dh9AHUL7mKJ3oqG9QAe?context=spotify%3Aplaylist%3A3C2MhlekGUUINthxv0vhsl" },
   { nombres: ["Rosa", "Rosita"], artista: "Diomedes Diaz, Colacho Mendoza", cancion: "Rosita", link: "https://open.spotify.com/track/6mUQH5lZz0Rs9zOiu2yW0t?context=spotify%3Aplaylist%3A3C2MhlekGUUINthxv0vhsl" },
   { nombres: ["Simona"], artista: "Jorge Oñate, Colacho Mendoza", cancion: "Simona", link: "https://open.spotify.com/track/2beUBUw0QOkFsCx30kD3z3?context=spotify%3Aplaylist%3A3C2MhlekGUUINthxv0vhsl" },
+  { nombres: ["Sofía", "Sophia"], artista: "Alejandro Duran", cancion: "Sofía", link: "https://open.spotify.com/track/36SOeGFfsBHp9aEr4guc9L?context=spotify%3Aplaylist%3A3C2MhlekGUUINthxv0vhsl" },
   { nombres: ["Sorayita"], artista: "Los Hermanos Zuleta", cancion: "Sorayita", link: "https://open.spotify.com/track/0Jdq3NKy9TDFhCMQ1OS9wt?context=spotify%3Aplaylist%3A3C2MhlekGUUINthxv0vhsl" },
   { nombres: ["Teresa", "Teresita"], artista: "Diomedes Diaz, Naffer Durán", cancion: "Teresita", link: "https://open.spotify.com/track/7DM55Ye46DCcjXtmqpLO7K?context=spotify%3Aplaylist%3A3C2MhlekGUUINthxv0vhsl" },
   { nombres: ["Vanessa"], artista: "Jose Luis Carrascal", cancion: "Vanessa", link: "https://open.spotify.com/track/2y1XWk8FwuH7d3Z5TsVbNP?context=spotify%3Aplaylist%3A3C2MhlekGUUINthxv0vhsl" },
@@ -137,7 +138,7 @@ input.addEventListener("input", () => {
     resultDiv.innerHTML = `
       <div class="result-header">
         <p><strong class="lato-bold color-1">Coincidencia encontrada:</strong></p>
-        <p>${r.nombres[0]}</p>
+        <p>${r.nombres.join(", ")}</p>
       </div>
       <div class="result-body">
         <p class="result-body-cancion"><strong class="lato-bold color-1">Canción:</strong></p>
