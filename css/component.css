@@ -112,7 +112,7 @@ html.js,
 }
 
 .link--faded {
-	color: #000000;
+	color: #3055F0;
 }
 
 .link--faded:hover,
@@ -197,7 +197,7 @@ html.js,
 .menu-button::before,
 .menu-button::after,
 .menu-button span {
-	background: #000000;
+	background: #3055F0;
 }
 
 .menu-button::before,
