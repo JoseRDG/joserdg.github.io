@@ -679,7 +679,7 @@ img {
   margin:-.5em 0 0 -.5em;
   background:#D7ABC5;
   border-radius:50%;
-  filter:drop-shadow(0 0 1px #ffffff) drop-shadow(0 0 1px #ffffff);
+  filter:drop-shadow(0 0 1px #000000) drop-shadow(0 0 1px #000000);
 }
 
 .flor3d-petal{
