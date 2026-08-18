@@ -18,7 +18,6 @@ section {
 	width:100%
 }
 
-
 h1 {
 	all: unset;
   display: revert;
@@ -26,7 +25,7 @@ h1 {
 
 .txt-stro {
 	color: #000000;
-    -webkit-text-stroke: 1px #D7ABC5;
+  -webkit-text-stroke: 1px #D7ABC5;
 }
 
 img {
@@ -286,85 +285,58 @@ img {
     right: 50%;*/
   transform-origin: left top;
   opacity: 0;
-}
-
-#flor-no1 {
   background: transparent;
   border: 1px solid #D7ABC5;
-  animation: spin 5s ease-out infinite;
   animation-fill-mode: forwards;
+}
+
+#flor-no1 { 
+  animation: spin 5s ease-out infinite;  
   animation-delay: 0s;
 }
 
 #flor-no2 {
-  background: transparent;
-  border: 1px solid #D7ABC5;
   animation: spin2 5s ease-out infinite;
-  animation-fill-mode: forwards;
   animation-delay: 0.05s;
 }
 
 #flor-no3 {
-  background: transparent;
-  border: 1px solid #D7ABC5;
   animation: spin3 5s ease-out infinite;
-  animation-fill-mode: forwards;
   animation-delay: 0.1s;
 }
 
 #flor-no4 {
-  background: transparent;
-  border: 1px solid #D7ABC5;
   animation: spin4 5s ease-out infinite;
-  animation-fill-mode: forwards;
   animation-delay: 0.15s;
 }
 
 #flor-no5 {
-  background: transparent;
-  border: 1px solid #D7ABC5;
   animation: spin5 5s ease-out infinite;
-  animation-fill-mode: forwards;
   animation-delay: 0.2s;
 }
 
 #flor-no6 {
-  background: transparent;
-  border: 1px solid #D7ABC5;
   animation: spin6 5s ease-out infinite;
-  animation-fill-mode: forwards;
   animation-delay: 0.25s;
 }
 
 #flor-no7 {
-  background: transparent;
-  border: 1px solid #D7ABC5;
   animation: spin7 5s ease-out infinite;
-  animation-fill-mode: forwards;
   animation-delay: 0.30s;
 }
 
 #flor-no8 {
-  background: transparent;
-  border: 1px solid #D7ABC5;
   animation: spin8 5s ease-out infinite;
-  animation-fill-mode: forwards;
   animation-delay: 0.35s;
 }
 
 #flor-no9 {
-  background: transparent;
-  border: 1px solid #D7ABC5;
   animation: spin9 5s ease-out infinite;
-  animation-fill-mode: forwards;
   animation-delay: 0.40s;
 }
 
 #flor-no10 {
-  background: transparent;
-  border: 1px solid #D7ABC5;
   animation: spin10 5s ease-out infinite;
-  animation-fill-mode: forwards;
   animation-delay: 0.45s;
 }
 
@@ -641,7 +613,7 @@ img {
   }
 }
 
-.flor3d{
+.flor3d {
   position:relative;
   width:320px;
   height:320px;
@@ -656,12 +628,12 @@ img {
   transform:translate(-50%,-50%);
 }
 
-@keyframes flor3d-container{
+@keyframes flor3d-container {
   from{transform:rotateX(60deg) rotate(0deg) translateZ(-0.6em);}
   to{transform:rotateX(60deg) rotate(60deg) translateZ(-0.6em);}
 }
 
-.flor3d-container{
+.flor3d-container {
   position:relative;
   width:0;
   height:0;
@@ -670,7 +642,7 @@ img {
   animation:flor3d-container 1.5s linear infinite;
 }
 
-.flor3d-circle{
+.flor3d-circle {
   position:absolute;
   top:0;
   left:0;
@@ -679,10 +651,10 @@ img {
   margin:-.5em 0 0 -.5em;
   background:#D7ABC5;
   border-radius:50%;
-  filter:drop-shadow(0 0 1px #000000) drop-shadow(0 0 1px #000000);
+  filter:drop-shadow(0 0 2px #000000) drop-shadow(0 0 2px #000000);
 }
 
-.flor3d-petal{
+.flor3d-petal {
   background:inherit;
   position:absolute;
   top:50%;
@@ -830,4 +802,31 @@ to{transform:translate(-50%,-50%) rotate(300deg) translateX(.35em) scaleX(.9);}
 
 .nino img {
   -webkit-animation: wiggle 2.4s ease-out infinite;
+}
+
+.gift-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.gift-buttons .btn {
+  flex: 1;
+  max-width: 220px;
+  text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .gift-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .gift-buttons .btn {
+    width: 100%;
+    max-width: none;
+  }
 }
